@@ -1,18 +1,6 @@
-// import {
-//   AcademicCapIcon,
-//   ArrowDownTrayIcon,
-//   BuildingOffice2Icon,
-//   CalendarIcon,
-//   FlagIcon,
-//   MapIcon,
-//   SparklesIcon,
-// } from '@heroicons/react/24/outline';
-
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
-// import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -87,17 +75,7 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    // {
-    //   href: '/assets/resume.pdf',
-    //   text: 'Resume',
-    //   primary: true,
-    //   Icon: ArrowDownTrayIcon,
-    // },
-    // {
-    //   href: `#${SectionId.Contact}`,
-    //   text: 'Contact',
-    //   primary: false,
-    // },
+
   ],
 };
 
@@ -112,12 +90,6 @@ export const aboutData: About = {
   Through this innovative approach, we aim to improve the speed and accuracy of pneumonia diagnosis, 
   ultimately contributing to more effective and timely medical care.`,
   aboutItems: [
-    // {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    // {label: 'Age', text: '29', Icon: CalendarIcon},
-    // {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    // {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    // {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
   
 };
@@ -276,31 +248,26 @@ export const education: TimelineItem[] = [
     date: '2602056492',
     location: 'Project Manager',
     title: 'Sebastian Kimura Fellenius Devlen Andyanto',
-    // content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: '2602065603',
     location: 'Designer',
     title: 'Andra Chairunnisa Dwi P',
-    // content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: '2602199941',
     location: 'Analytics Topic',
     title: 'Ganesha Warendra Sindhunata',
-    // content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: '2602097353',
     location: 'Programmer',
     title: 'Kelven Tjipta Wibowo',
-    // content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: '2602129973',
     location: 'Moderator',
     title: 'Ivan Ratana Putra',
-    // content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
@@ -309,23 +276,11 @@ export const experience: TimelineItem[] = [
     date: 'March 2010 - Present',
     location: 'Awesome Development Company',
     title: 'Senior UX Engineer',
-    // content: (
-    //   <p>
-    //     Describe work, special projects, notable achievements, what technologies you have been working with, and
-    //     anything else that would be useful for an employer to know.
-    //   </p>
-    // ),
   },
   {
     date: 'March 2007 - February 2010',
     location: 'Garage Startup Studio',
     title: 'Junior bug fixer',
-    // content: (
-    //   <p>
-    //     Describe work, special projects, notable achievements, what technologies you have been working with, and
-    //     anything else that would be useful for an employer to know.
-    //   </p>
-    // ),
   },
 ];
 
@@ -366,11 +321,6 @@ export const contact: ContactSection = {
       text: 'reachout@pulmoscan.com',
       href: 'mailto:reachout@pulmoscan.demo',
     },
-    // {
-    //   type: ContactType.Location,
-    //   text: 'Victoria BC, Canada',
-    //   href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    // },
     {
       type: ContactType.Instagram,
       text: '@pulmoscan',
@@ -391,6 +341,4 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/'},
-  // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/'},
-  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/'},
 ];

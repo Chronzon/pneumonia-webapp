@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { FileInput } from "flowbite-react";
 import * as tf from '@tensorflow/tfjs';
 import loadModel from '../../utils/loadmodel';
-// import './nyoba_2.css';
 
 export default function Nyoba() {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -17,7 +16,7 @@ export default function Nyoba() {
     const file = event.target.files?.[0];
     if (file) {
       setSelectedFile(file);
-      setPredictionResult(''); // Clear previous prediction result
+      setPredictionResult(''); 
     }
   };
 

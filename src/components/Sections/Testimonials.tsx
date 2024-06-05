@@ -26,7 +26,6 @@ const Testimonials: FC = memo(() => {
     return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
   }, [imageSrc]);
 
-  // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
     setParallaxEnabled(!(isMobile && isApple));
   }, []);
@@ -64,7 +63,6 @@ const Testimonials: FC = memo(() => {
 
   useInterval(next, 10000);
 
-  // If no testimonials, don't render the section
   if (!testimonials.length) {
     return null;
   }

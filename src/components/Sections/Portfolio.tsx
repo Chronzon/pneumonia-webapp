@@ -9,9 +9,6 @@ import {PortfolioItem} from '../../data/dataDef';
 import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
 
-// import * as tf from '@tensorflow/tfjs';
-// import loadModel from '../../utils/loadmodel';
-
 const Portfolio: FC = memo(() => {
 
   return (
@@ -87,58 +84,3 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     </a>
   );
 });
-
-
-
-
-// const [selectedFile, setSelectedFile] = useState<File | null>(null);
-//   const [predictionResult, setPredictionResult] = useState<string>('');
-
-//   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     const file = event.target.files?.[0];
-//     if (file) {
-//       setSelectedFile(file);
-//       setPredictionResult(''); // Clear previous prediction result
-//     }
-//   };
-
-//   const handlePredictClick = async () => {
-//     if (selectedFile) {
-//       const model = await loadModel();
-//       const predictedClass = await predictImage(model, selectedFile);
-//       setPredictionResult(predictedClass);
-//     }
-//   };
-
-//   const preprocessImage = async (img: HTMLImageElement): Promise<tf.Tensor> => {
-//     const resizedImg = tf.image.resizeBilinear(tf.browser.fromPixels(img), [150, 150]);
-//     const normalizedImg = resizedImg.div(tf.scalar(255));
-//     const expandedImg = normalizedImg.expandDims(0);
-//     return expandedImg;
-//   };
-
-//   const predictImage = async (model: tf.LayersModel, file: File): Promise<string> => {
-//     const img = new Image();
-//     const imageUrl = URL.createObjectURL(file);
-//     img.src = imageUrl;
-
-//     await new Promise<void>((resolve) => {
-//       img.onload = () => resolve();
-//     });
-
-//     const processedImg = await preprocessImage(img);
-
-//     console.log('Model Input Shape:', model.inputs[0].shape);
-//     console.log('Processed Image Shape:', processedImg.shape);
-
-//     const prediction = model.predict(processedImg) as tf.Tensor;
-//     const predictionData = await prediction.data();
-
-//     console.log('Prediction Data:', predictionData);
-
-//     const predictionArray = Array.from(predictionData);
-//     const predictedClassIndex = predictionArray.indexOf(Math.max(...predictionArray));
-//     const predictedClass = predictedClassIndex === 0 ? 'Normal' : 'Pneumonia';
-
-//     return predictedClass;
-//   };
